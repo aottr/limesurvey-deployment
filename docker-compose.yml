@@ -4,8 +4,6 @@ services:
   limesurvey:
     image: martialblog/limesurvey:5-fpm
     volumes:
-      - ./surveys:/var/www/html/upload/surveys
-      - ./themes:/var/www/html/upload/themes/survey
       - lime:/var/www/html
     env_file:
       - .env
